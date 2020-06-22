@@ -44,6 +44,8 @@ function Presentation(){
 		}else {
 			setScroll(false)
 		}
+		
+		
 	})
 
 
@@ -54,9 +56,10 @@ function Presentation(){
 			<header  className={scroll===true ? 'header-landing-dark' : 'header-landing'}>
 				<nav className='landing-nav'>
 					<ul className='ul-landing'>
+						<li><a href='/search'><span>Search</span></a></li>
 						<li><a href='#about'>About</a></li>
 						<li><a href='#contact'>Contact</a></li>
-						<li><span><a href='#landing'><i className="fa fa-level-up" aria-hidden="true"></i></a></span></li>
+						<li><span><a href='#landing'><i className="fa fa-level-up" aria-hidden="false"></i></a></span></li>
 					</ul>
 				</nav>
 			</header>
