@@ -6,4 +6,6 @@
   ### *Intolerances
   ### *Diet
 
-#### Made using the spoonacular API
+#### Made using the spoonacular's API
+
+#### http://chefsbook.surge.sh
