@@ -44,12 +44,19 @@ export default class List extends Component{
         )
     }
     renderLoading = () =>{
+        console.log(this.props.data.length)
+
         return(
             <div className="spinner-border text-danger" role="status">
                 <span className="sr-only">Loading...</span>
             </div>
         )
     } 
+    handleNotFound = ()=>{
+        return(
+            <h1>Sorry, no results :(</h1>
+        )
+    }
     render() 
     {
         
@@ -57,7 +64,7 @@ export default class List extends Component{
             
             <div className='list-container'>
                 
-                {this.props.isLoading ? this.renderLoading() : this.renderRecipeList()}
+                {this.props.isLoading ? this.renderLoading() : this.props.data.length === 0 ? this.handleNotFound() : this.renderRecipeList()}
                
             </div>
         )

@@ -171,8 +171,8 @@ class Header extends Component{
                     </li>
 
                     <li>
-                        <input type="checkbox" id='eastern_europe' />
-                        <label onClick={this.handlecuisineFilter} htmlFor='eastern_europe'>#Eastern European</label>
+                        <input type="checkbox" id='eastern-europe' />
+                        <label onClick={this.handlecuisineFilter} htmlFor='eastern-europe'>#Eastern European</label>
                     </li>
 
                     <li>
@@ -213,8 +213,8 @@ class Header extends Component{
                         <label onClick={this.handlecuisineFilter} htmlFor='jewish'>#Jewish</label>
                     </li>
                     <li>
-                        <input  type="checkbox" id='latin american' />
-                        <label onClick={this.handlecuisineFilter} htmlFor='latin american'>#Latin American</label>
+                        <input  type="checkbox" id='latin-american' />
+                        <label onClick={this.handlecuisineFilter} htmlFor='latin-american'>#Latin American</label>
                     </li>
 
                     <li>
@@ -222,8 +222,8 @@ class Header extends Component{
                         <label onClick={this.handlecuisineFilter} htmlFor='mexican'>#Mexican</label>
                     </li>
                     <li>
-                        <input  type="checkbox" id='middle eastern' />
-                        <label onClick={this.handlecuisineFilter} htmlFor='middle eastern'>#Middle Eastern</label>
+                        <input  type="checkbox" id='middle-eastern' />
+                        <label onClick={this.handlecuisineFilter} htmlFor='middle-eastern'>#Middle Eastern</label>
                     </li>
                     <li>
                         <input  type="checkbox" id='nordic' />
@@ -345,8 +345,8 @@ class Header extends Component{
                         <label onClick={this.handleIntoleranceFilter} htmlFor='Sulfite'>#Sulfite</label>
                     </li>
                     <li>
-                        <input  type="checkbox" id='Tree-Nut' />
-                        <label onClick={this.handleIntoleranceFilter} htmlFor='Tree-Nut'>#Tree Nut</label>
+                        <input  type="checkbox" id='tree-Nut' />
+                        <label onClick={this.handleIntoleranceFilter} htmlFor='tree-nut'>#Tree Nut</label>
                     </li>
                     <li>
                         <input  type="checkbox" id='Wheat' />
