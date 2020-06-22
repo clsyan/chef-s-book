@@ -1,9 +1,9 @@
-#Chief's Book
+# Chef's Book
 
-##Search for more than 330,000 Recipes
-##Filter your searches by:
-###*Cuisine
-###*Intolerances
-###*Diet
+## Search for more than 330,000 Recipes
+## Filter your searches by:
+  ### *Cuisine
+  ### *Intolerances
+  ### *Diet
 
-####Made using the spoonacular API
+#### Made using the spoonacular API
