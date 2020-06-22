@@ -8,13 +8,11 @@ import LandingPage from './components/LandingPage/LandingPage'
 function App() {
 	
 
-	function handleScroll(){
-			console.log('b')
-		}
+	
 	return (
 
 		<Router>
-			<div onScroll={handleScroll} className='App'>
+			<div className='App'>
 				<Route exact path='/' component={LandingPage} />
 				<Route path='/search' component={SearchPage} />
 			</div>

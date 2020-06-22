@@ -31,13 +31,11 @@ function Presentation(){
 		       console.log('FAILED...', error);
 		    });
 
-		console.log(templateParams)	
 	}
 	
 	window.addEventListener('scroll', ()=>{
 		let indexY = window.scrollY
-		console.log(scroll)
-		console.log(indexY)
+		
 
 		if(indexY > 595 && indexY < 1370){
 			setScroll(true)
@@ -59,7 +57,7 @@ function Presentation(){
 						<li><a href='/search'><span>Search</span></a></li>
 						<li><a href='#about'>About</a></li>
 						<li><a href='#contact'>Contact</a></li>
-						<li><span><a href='#landing'><i className="fa fa-level-up" aria-hidden="false"></i></a></span></li>
+						<li><a href='#landing'><span><i className="fa fa-level-up" aria-hidden="false"></i></span></a></li>
 					</ul>
 				</nav>
 			</header>
@@ -68,20 +66,22 @@ function Presentation(){
 					<h1>Search for any <span>recipe</span> right now.</h1>
 				</div>
 				<div id='about' className='about'>
-					<div className='about-inner'>
+					<div id='card1' className='about-inner'>
 						<div className='card'>
 							<span>#Vegan</span>
-							<img src="https://www.vegetariantimes.com/.image/t_share/MTQ3MDM3MzQ5NjA2MzM2NDA3/zi3000-shutterstock-buddha-bowl.jpg" alt="vegan meal" />
+							<img src={require ('../../assets/vege.jpg')} alt='vegan meal'/>
+
+							{/*<img src="https://www.vegetariantimes.com/.image/t_share/MTQ3MDM3MzQ5NjA2MzM2NDA3/zi3000-shutterstock-buddha-bowl.jpg" alt="vegan meal" />*/}
 						</div>
 						<div className='card'>
 							<span>#African</span>
 
-							<img src='https://zululandobserver.co.za/wp-content/uploads/sites/56/2015/05/AFrican-food.jpg' alt='african meal' />
+							<img src={require ('../../assets/african.jpg')} alt='african meal' />
 						</div>
 						<div className='card'>
 							<span>#Gluten free</span>
 
-							<img src='https://threebakers.com/wp-content/uploads/2017/05/gluten-free-food-3.jpg' alt='gluten-free meal' />
+							<img src={require ('../../assets/gluten.jpg')} alt='gluten-free meal' />
 						</div>
 					</div>
 					<h1><span>Search for several recipes. Filter your search for more specific results!</span></h1>
@@ -89,7 +89,7 @@ function Presentation(){
 				<div id='contact' className='contact'>
 					<h1>Contact us!</h1>
 					<div className='form-landing-container'>
-						<form method='POST' onSubmit={handleSubmit} className='form-landing'>
+						<form onSubmit={handleSubmit} className='form-landing'>
 							<input required placeholder='Email' className='email' name='email'/>
 							
 							<input required placeholder='First Name' className='first-name' name='first name' />
